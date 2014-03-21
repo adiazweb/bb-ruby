@@ -171,7 +171,7 @@ module BBRuby
       :quote],
     'Link' => [
       /\[url=(?:&quot;)?(.*?)(?:&quot;)?\](.*?)\[\/url\]/mi,
-      '<a href="\1">\2</a>',
+      '<a href="\1" target="_blank" rel="nofollow">\2</a>',
       'Hyperlink to somewhere else',
       'Maybe try looking on [url=http://google.com]Google[/url]?',
       :link],
