@@ -177,19 +177,19 @@ module BBRuby
       :link],
     'Link (Implied)' => [
       /\[url\](.*?)\[\/url\]/mi,
-      '<a href="\1">\1</a>',
+      '<a href="\1" target="_blank" rel="nofollow">\1</a>',
       'Hyperlink (implied)',
       "Maybe try looking on [url]http://google.com[/url]",
       :link],
     'Link (Automatic)' => [
       /(\A|\s)(https?:\/\/[^\s<]+)/,
-      ' <a href="\2">\2</a>',
+      ' <a href="\2" target="_blank" rel="nofollow">\2</a>',
       'Hyperlink (automatic)',
       'Maybe try looking on http://www.google.com',
       :link],
     'Link (Automatic without leading http(s))' => [
       /(\A|\s)(www\.[^\s<]+)/,
-      ' <a href="http://\2">\2</a>',
+      ' <a href="http://\2" target="_blank" rel="nofollow">\2</a>',
       'Hyperlink (automatic without leading http(s))',
       'Maybe try looking on www.google.com',
       :link],
