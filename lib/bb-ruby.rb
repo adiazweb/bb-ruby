@@ -176,7 +176,7 @@ module BBRuby
       'Maybe try looking on [url=http://google.com]Google[/url]?',
       :link],
       'LinkFollow' => [
-      /\[url=(?:&quot;)?(.*?)(?:&quot;)?\](.*?)\[\/url\]/mi,
+      /\[urlf=(?:&quot;)?(.*?)(?:&quot;)?\](.*?)\[\/urlf\]/mi,
       '<a target="_blank" href="\1" >\2</a>',
       'Hyperlink to somewhere else',
       'Maybe try looking on [url=http://google.com]Google[/url]?',
