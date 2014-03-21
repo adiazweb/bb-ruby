@@ -13,6 +13,36 @@ module BBRuby
       'Title h1',
       'Look [h1]here[/h1]',
       :h1],
+    'H2' => [
+      /\[h2(:.*)?\](.*?)\[\/h2\1?\]/mi,
+      '<h2>\2</h2>', #Proc alternative for example: lambda{ |e| "<strong>#{e[2]}</strong>" }
+      'Title h2',
+      'Look [h2]here[/h2]',
+      :h2],
+    'H3' => [
+      /\[h3(:.*)?\](.*?)\[\/h3\1?\]/mi,
+      '<h3>\2</h3>', #Proc alternative for example: lambda{ |e| "<strong>#{e[2]}</strong>" }
+      'Title h3',
+      'Look [h3]here[/h3]',
+      :h3],  
+    'H4' => [
+      /\[h4(:.*)?\](.*?)\[\/h4\1?\]/mi,
+      '<h4>\2</h4>', #Proc alternative for example: lambda{ |e| "<strong>#{e[2]}</strong>" }
+      'Title h4',
+      'Look [h4]here[/h4]',
+      :h4],  
+    'H5' => [
+      /\[h5(:.*)?\](.*?)\[\/h5\1?\]/mi,
+      '<h5>\2</h5>', #Proc alternative for example: lambda{ |e| "<strong>#{e[2]}</strong>" }
+      'Title h5',
+      'Look [h5]here[/h5]',
+      :h5], 
+    'H6' => [
+      /\[h6(:.*)?\](.*?)\[\/h6\1?\]/mi,
+      '<h6>\2</h6>', #Proc alternative for example: lambda{ |e| "<strong>#{e[2]}</strong>" }
+      'Title h6',
+      'Look [h6]here[/h6]',
+      :h6],        
     'Bold' => [
       /\[b(:.*)?\](.*?)\[\/b\1?\]/mi,
       '<strong>\2</strong>', #Proc alternative for example: lambda{ |e| "<strong>#{e[2]}</strong>" }
