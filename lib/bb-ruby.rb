@@ -3,6 +3,7 @@ module BBRuby
   @@imageformats = 'png|bmp|jpg|gif|jpeg'
   @@quote_matcher = '(&quot;|&apos;|)'
 
+
   # built-in BBCode tabs that will be processed
   @@tags = {
     # tag name => [regex, replace, description, example, enable/disable symbol]
