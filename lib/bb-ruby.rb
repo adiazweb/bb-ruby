@@ -175,6 +175,12 @@ module BBRuby
       'Hyperlink to somewhere else',
       'Maybe try looking on [url=http://google.com]Google[/url]?',
       :link],
+      'LinkFollow' => [
+      /\[url=(?:&quot;)?(.*?)(?:&quot;)?\](.*?)\[\/url\]/mi,
+      '<a target="_blank" href="\1" >\2</a>',
+      'Hyperlink to somewhere else',
+      'Maybe try looking on [url=http://google.com]Google[/url]?',
+      :linkFollow],
     'Link (Implied)' => [
       /\[url\](.*?)\[\/url\]/mi,
       '<a target="_blank" rel="nofollow" href="\1" >\1</a>',
